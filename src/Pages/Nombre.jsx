@@ -18,12 +18,12 @@ export default function Nombre() {
     return (
       <div>
         <Header/>
-        <div className="container d-flex flex-column justify-content-center align-items-center p-5">
+        <div className="container d-flex flex-column justify-content-center align-items-center">
           <p className=" texte">{nombre}</p>
-          <div className="d-flex gap-3">
-          <button onClick={incrementer} className="btn btn-primary">+</button>
-          <button onClick={decrementer} className="btn btn-primary">-</button>
-          <button onClick={reset} className="btn btn-primary">Reset</button>
+          <div className="d-flex">
+          <button onClick={incrementer} className="btn btn-primary m-2 btn-lg">+</button>
+          <button onClick={decrementer} className="btn btn-primary m-2 btn-lg">-</button>
+          <button onClick={reset} className="btn btn-primary m-2 btn-lg">Reset</button>
         </div>
         </div>
       
