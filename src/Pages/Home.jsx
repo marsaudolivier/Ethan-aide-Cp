@@ -6,7 +6,7 @@ export default function Home() {
         <Header/>
         <div className="container d-flex flex-column justify-content-center align-items-center p-5">
             <h1>Bonjour Ethan</h1>
-            <img src="/Ethan.jpg" alt="Ethan"  className="img-fluid rounded-circle w-50"/>
+            <img src="assets/images/Ethan.jpg" alt="Ethan"  className="img-fluid rounded-circle w-50"/>
         </div>
       
      
