@@ -27,18 +27,13 @@ export default function Poemes() {
         <div className="d-flex justify-content-center">
           {/* bouton affiché a gauche et retour a droite */}
         <button onClick={handlePoesierentre} className="btn btn-primary" id="poesierentre">Afficher Quelle belle rentrée !</button>
-        <button onClick={handleRetour} className="btn btn-primary m-3 none " id="retour">Retour</button>
-        </div>
         {poesierentre && <Poesierentre/>}
 
-      
+        </div>
+        <div className="d-flex justify-content-center">
+        <button onClick={handleRetour} className="btn btn-primary m-3 none " id="retour">Retour</button> 
+        </div>
 
-
-      
-  
-        
-        
-      
       </div>
     );
   }
