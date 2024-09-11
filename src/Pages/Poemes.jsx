@@ -5,8 +5,6 @@ import Poesierentre from "../composant/poesie/Poesierentre";
 import { useState } from "react";
 
 
-
-
 export default function Poemes() {
   const [poesierentre, setPoesierentre] = useState(false);
   //fonction pour afficher la poesierentre et au click enlever le bouton handlePoesierentre
