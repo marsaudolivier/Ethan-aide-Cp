@@ -15,6 +15,10 @@ export default function Nombre() {
   const reset = () => {
     setNombre(0);
   }
+  //fonction pour randomiser le nombre entre 0 et 30
+  const randomiser = () => {
+    setNombre(Math.floor(Math.random() * 30));
+  }
     return (
       <div>
         <Header/>
@@ -23,7 +27,8 @@ export default function Nombre() {
           <div className="d-flex">
           <button onClick={incrementer} className="btn btn-primary m-2 btn-lg">+</button>
           <button onClick={decrementer} className="btn btn-primary m-2 btn-lg">-</button>
-          <button onClick={reset} className="btn btn-primary m-2 btn-lg">Reset</button>
+          <button onClick={randomiser} className="btn btn-success m-2 btn-lg">Random</button>
+          <button onClick={reset} className="btn btn-danger m-2 btn-lg">Reset</button>
         </div>
         </div>
       
