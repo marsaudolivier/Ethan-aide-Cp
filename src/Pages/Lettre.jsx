@@ -9,7 +9,7 @@ export default function Lettre() {
 //au click sur un bouton lettre suivante alphabet
 
   const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  const alphabetMinus = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  const alphabetMinus = ["a", "b", "c", "d", "e","é", "è", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
   const [lettre, setLettre] = useState(alphabet[0]);
   const [lettreMinus, setLettreMinus] = useState(alphabetMinus[0]);
