@@ -12,18 +12,18 @@ export default function LettreMxXm() {
                     "im", "ym", "om", "um", "em", "ém", "èm", "um", "mi",
                     "ém", "mo", "im", "ma", "èm", "om", "mu", "me", "mé"];
 
-  const [lettre, setLettre] = useState(alphabet[0]);
+                    const [index, setIndex] = useState(0);
 
   const handleClick = () => {
-    document.getElementById("lettre").innerHTML = alphabet[alphabet.indexOf(lettre) + 1];
-    setLettre(alphabet[alphabet.indexOf(lettre) + 1]);
+   // Incrémenter l'index de façon circulaire (quand on arrive à la fin, on repart de 0)
+   setIndex((prevIndex) => (prevIndex + 1) % alphabet.length);
   };
     return (
       <div>
         <Header/>
         <div className="container d-flex flex-column justify-content-center align-items-center p-5">
           <div className=" gap-3">
-            <p className=" texte text-center" id="lettre">{lettre}</p>
+          <p className="texte text-center" id="lettre">{alphabet[index]}</p>
             <button onClick={handleClick} className="btn btn-danger m-2 btn-lg">MAJ</button>
         </div>
         </div>
