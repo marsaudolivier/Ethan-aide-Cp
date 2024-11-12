@@ -1,6 +1,7 @@
 import Header from "../composant/header";
 
 export default function Home() {
+  console.log(window.screen.orientation.type)
     return (
       <div>
         <Header/>
